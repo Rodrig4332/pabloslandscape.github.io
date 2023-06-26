@@ -1,12 +1,24 @@
 
-
-body {
-  background-color: #fcfcfcd9;
-    
-}
 html {
  box-sizing: border-box;
  background-color: rgb(249, 251, 251);
+}
+
+body {
+  background-color: #fcfcfcd9;
+}
+
+.logo {
+  margin-right: 0;
+  text-align: center;
+  border-radius: 5px;
+}
+
+nav {
+  text-align: right;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1 {
@@ -20,26 +32,24 @@ h2 {
 }
 
 p {
- font-size: medium;
- font-family:Arial, Helvetica, sans-serif;
-}
+  font-size: medium;
+  font-family:Arial, Helvetica, sans-serif;
+ }
+
+.container {
+  width: 3px;
+  height: 2px;
+  }
 
 cite {
   display: flex;
   justify-content:center;
 }
 
-.reviews {
+/* .reviews {
   display: grid;
   grid-template-rows: 1fr, 1rf, 1fr;
-}
-
-nav {
-  text-align: right;
-  margin-bottom: 5px;
-  margin-right: 10px;
-  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+} */
 
 .gallery {
   display: flex;
@@ -50,18 +60,6 @@ nav {
   background: rgb(3, 117, 3);
   text-shadow:#f2f2f2;
 }
-
-.logo {
-    margin-right: 0;
-    text-align: center;
-    border-radius: 5px;
-}
-
-.container {
-  width: 3px;
-  height: 2px;
-}
-
 
 hr {
   padding: 5px ;
