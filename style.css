@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Montserrat:wght@200;300&family=Open+Sans:ital@1&family=Oswald&family=Poppins:ital@1&family=Roboto&family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&family=Open+Sans:ital@1&family=Oswald&family=Poppins:ital@1&family=Roboto&family=Roboto+Mono&display=swap');
 
 
 html {
@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  font-family: Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .logo {
@@ -35,7 +35,7 @@ h2 {
 
 p {
   font-size: medium;
-  font-family:Poppins, sans-serif;
+  font-family: 'Montserrat', sans-serif;
  }
 
 .container {
@@ -77,9 +77,9 @@ hr {
 }
 
 img {
-  border-radius: 5px;
   margin-left: 5px;
   object-fit: cover;
+  border-radius: 5px;
 }
 
 .image-container {
@@ -186,4 +186,10 @@ img {
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
+}
+
+@media screen {
+  .slideshow-container {
+    max-width: 1200px;
+  }
 }
