@@ -26,19 +26,19 @@
   <section id="home">
   <div class="mySlides fade">
     <div class="numbertext">1 / 3</div>
-    <img src="img/grass.JPG" width="100%" height="320px">
+    <img src="img/grass.JPG" width="100%" height="300px">
     <div class="text">Grass Cutting</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="img/triminga.JPG" width="99%" height="320px">
+    <img src="img/triminga.JPG" width="99%" height="300px">
     <div class="text">Tree Triming</div>
   </div>
 
   <div class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="img/cleaninga.JPG" width="99%" height="320px">
+    <img src="img/cleaninga.JPG" width="99%" height="300px">
     <div class="text">Maintenance</div>
   </div>
 
@@ -81,13 +81,30 @@
     
     <!-- Gallery -->
     <h2>Gallery</h2>
-    <div class="img-zoom-container">
+    <!-- <div class="img-zoom-container">
       <img src="img/grass2.JPG" alt="cut grass" height="300px" width="200px">
       <img src="img/triminga.JPG" alt="trimed tree" height="300px" width="200px">
       <img src="img/cleaninga.JPG" alt="Maintenance" height="300px" width="200px">
       <img src="img/triming2.jpg" alt="tree" height="300px" width="200px">
       <img src="img/clean.jpg" alt="clean yard" height="300px" width="200px">
       <div id="myresult" class="img-zoom-result"></div>
+    </div> -->
+    <div class="gallery">
+      <img src="img/grass2.JPG" alt="grass2" height="400px" width="200px" onclick="openModal('img/grass2.JPG')">
+      <img src="img/triminga.JPG" alt="triminga" height="300px" width="200px" onclick="openModal('img/triminga.JPG')">
+      <img src="img/cleaninga.JPG" alt="cleaninga" height="300px" width="200px" onclick="openModal('img/cleaninga.jpg')">
+      <img src="img/triming2.jpg" alt="triming2" height="300px" width="200px" onclick="openModal('img/triming2.jpg')">
+      <img src="img/clean.jpg" alt="clean" height="300px" width="200px" onclick="openModal('img/clean.jpg')">
+      <img src="img/cleaningb.JPG" alt="cleaningb" height="300px" width="200px" onclick="openModal('img/cleaningb.JPG')">
+      <img src="img/trimingb.JPG" alt="trimingb" height="300px" width="200px" onclick="openModal('img/trimingb.JPG')">
+      <img src="img/pablo-working.jpg" alt="pablo-working" height="300px" width="200px" onclick="openModal('img/pablo-working.jpg')">
+      <img src="img/working.jpg" alt="working" height="300px" width="200px" onclick="openModal('img/working.jpg')">
+      <img src="img/machine-onduty.jpg" alt="machine-onduty" height="300px" width="200px" onclick="openModal('img/machine-onduty.jpg')">
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <img class="modal-content" id="modalImg">
     </div>
     <hr>
     <!-- Reviews -->

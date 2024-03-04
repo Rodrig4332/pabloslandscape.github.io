@@ -7,7 +7,8 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: sans-serif;
+  font-weight: 500;
 }
 
 .logo {
@@ -35,7 +36,7 @@ h2 {
 
 p {
   font-size: medium;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
  }
 
 .container {
@@ -52,6 +53,51 @@ p {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery img {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+  /* Styles for the modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    margin: auto;
+    display: block;
+    max-width: 700px;
+}
+  
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    .gallery .image {
+        width: calc(100% / 2);
+    }
 }
 
 button {
@@ -77,9 +123,10 @@ hr {
 }
 
 img {
-  margin-left: 5px;
+  margin: 0;
   object-fit: cover;
   border-radius: 5px;
+  height: auto;
 }
 
 .image-container {
@@ -105,19 +152,20 @@ img {
 .slideshow-container {
   max-width: 100px;
   position:relative;
-  margin: auto;
+  margin: 50%;
 }
 
-/* Hide the images by default
+ /* Hide the images by default */
 .mySlides {
   display:flexbox;
-} */
+  max-height: 50%;
+} 
 
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  top: 60%;
+  top: 50%;
   width: auto;
   margin-top: -22px;
   padding: 16px;
